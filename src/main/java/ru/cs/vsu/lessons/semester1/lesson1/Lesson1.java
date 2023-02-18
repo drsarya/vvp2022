@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.lesson1;
+package ru.cs.vsu.lessons.semester1.lesson1;
 
 import java.util.Locale;
 import java.util.Scanner;

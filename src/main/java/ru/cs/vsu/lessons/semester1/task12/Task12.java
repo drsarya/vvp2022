@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.task12;
+package ru.cs.vsu.lessons.semester1.task12;
 
 public class Task12 {
     public static void main(String[] args) {

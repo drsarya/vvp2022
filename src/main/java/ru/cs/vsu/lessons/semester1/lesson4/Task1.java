@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.lesson4;
+package ru.cs.vsu.lessons.semester1.lesson4;
 
 import java.util.Scanner;
 

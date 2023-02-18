@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.lesson3.task3;
+package ru.cs.vsu.lessons.semester1.task3;
 
 public enum SimpleColor {
   ORANGE,

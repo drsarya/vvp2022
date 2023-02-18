@@ -1,6 +1,7 @@
-package ru.cs.vsu.lessons;
+package ru.cs.vsu.lessons.semester1.lesson5;
 
 import org.junit.Assert;
+import ru.cs.vsu.lessons.graph.Node;
 
 public class Task8 {
 
@@ -70,7 +71,7 @@ public class Task8 {
      */
     public static int[][] deleteColumn(int[][] matrix, int columnIndex) {
         if (matrix.length == 0 || columnIndex >= matrix[0].length || columnIndex < 0) {
-            throw new IllegalArgumentException("Incorrect index for deleting");
+            return new int[0][];
         }
         int[][] modMatrix = new int[matrix.length][matrix[0].length - 1];
         for (int col = 0, realCol = 0; col < matrix[0].length; col++, realCol++) {
@@ -86,6 +87,30 @@ public class Task8 {
         return modMatrix;
     }
 
+    public static Node[][] deleteColumn(Node[][] matrix, int columnIndex) {
+        if (matrix.length == 0 || columnIndex < 0) {
+            return new Node[0][];
+        }
+        int indForDelete = 0;
+        for (int j = 0; j < matrix[0].length; j++) {
+            if (matrix[0][j].column == columnIndex) {
+                indForDelete = j;
+                break;
+            }
+        }
+        Node[][] modMatrix = new Node[matrix.length][matrix[0].length - 1];
+        for (int col = 0, realCol = 0; col < matrix[0].length; col++, realCol++) {
+            if (col == indForDelete) {
+                realCol--;
+                continue;
+            }
+            for (int row = 0; row < matrix.length && realCol < modMatrix[row].length; row++) {
+                modMatrix[row][realCol] = matrix[row][col];
+            }
+        }
+        return modMatrix;
+    }
+
     /**
      * Удалить строку из матрицы
      *
@@ -93,6 +118,30 @@ public class Task8 {
      * @param indexRow индекс строки для удаления
      * @return модифицированная матрица
      */
+    public static Node[][] deleteRow(Node[][] matrix, int indexRow) {
+        if (indexRow < 0) {
+            return new Node[0][];
+        }
+        Node[][] modMatrix = new Node[matrix.length - 1][matrix[0].length];
+        int indForDelete = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            if (matrix[i][0].row == indexRow) {
+                indForDelete = i;
+                break;
+            }
+        }
+        for (int row = 0, realRow = 0; row < matrix.length; row++, realRow++) {
+            if (row == indForDelete) {
+                realRow--;
+                continue;
+            }
+            for (int col = 0; col < matrix[0].length; col++) {
+                modMatrix[realRow][col] = matrix[row][col];
+            }
+        }
+        return modMatrix;
+    }
+
     public static int[][] deleteRow(int[][] matrix, int indexRow) {
         if (indexRow >= matrix.length || indexRow < 0) {
             throw new IllegalArgumentException("Incorrect indexes for deleting");
@@ -109,7 +158,6 @@ public class Task8 {
                 modMatrix[realRow][col] = matrix[row][col];
             }
         }
-        printMatrix(modMatrix);
         return modMatrix;
     }
 

@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.lesson2.task2;
+package ru.cs.vsu.lessons.semester1.task2;
 
 
 import java.util.Locale;

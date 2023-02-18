@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.task9;
+package ru.cs.vsu.lessons.semester1.task9;
 
 import java.util.ArrayList;
 import java.util.Collections;

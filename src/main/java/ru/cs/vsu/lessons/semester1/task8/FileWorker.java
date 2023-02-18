@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.task8;
+package ru.cs.vsu.lessons.semester1.task8;
 
 import java.io.File;
 import java.io.FileNotFoundException;

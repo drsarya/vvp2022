@@ -1,10 +1,10 @@
-package ru.cs.vsu.lessons.lesson3.task3;
+package ru.cs.vsu.lessons.semester1.task3;
 
 
 import org.junit.Assert;
-import ru.cs.vsu.lessons.lesson3.task3.figures.Circle;
-import ru.cs.vsu.lessons.lesson3.task3.figures.Line;
-import ru.cs.vsu.lessons.lesson3.task3.figures.Rectangle;
+import ru.cs.vsu.lessons.semester1.task3.figures.Circle;
+import ru.cs.vsu.lessons.semester1.task3.figures.Line;
+import ru.cs.vsu.lessons.semester1.task3.figures.Rectangle;
 
 /**
  * Пример решения третьей задачи для варианта номер 5

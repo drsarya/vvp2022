@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.lesson3.task3.figures;
+package ru.cs.vsu.lessons.semester1.task3.figures;
 
 public class Rectangle {
 

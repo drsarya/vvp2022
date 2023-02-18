@@ -1,7 +1,7 @@
-package ru.cs.vsu.lessons.lesson4;
+package ru.cs.vsu.lessons.semester1.lesson4;
 
 import java.util.Scanner;
-import ru.cs.vsu.lessons.lesson3.task3.figures.Point;
+import ru.cs.vsu.lessons.semester1.task3.figures.Point;
 
 /**
  * Класс для чтения данных из консоли

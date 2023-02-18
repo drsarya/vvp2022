@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.task9;
+package ru.cs.vsu.lessons.semester1.task9;
 
 public class Point implements Comparable<Point> {
     private Integer x;
