@@ -1,4 +1,4 @@
-package ru.cs.vsu.lessons.sem2.lesson1;
+package ru.cs.vsu.lessons.semester2.lesson1;
 
 /**
  * Представляет элемент односвязного списка
